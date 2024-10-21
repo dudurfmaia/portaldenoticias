@@ -2,6 +2,8 @@ section header {
   border-top: 1px solid var(--stroke-color);
   padding-block: 12px 24px;
   font: var(--text-span);
+  color: var(--text-color-secondary);
+  
 
   a {
     justify-self: end;
@@ -25,6 +27,7 @@ section header {
 }
 
 #featured {
+  grid-area: featured;
 img{
   height: 100%;
   object-fit: cover;
@@ -68,6 +71,7 @@ img{
 }
 
 #weekly {
+  grid-area: weekly;
   
   &>div {
     grid-template-columns: repeat(4, 292px);
@@ -93,4 +97,52 @@ img{
 
 
   }
+}
+
+#ai {
+  grid-area: ai;
+  img {
+    width: 176px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  
+  h3 {
+    margin-block: 8px 4px;
+  }
+  p {
+    font: var(--text-sm);
+    color: var(--text-color-secondary);
+  }
+
+}
+
+aside {
+  grid-area: aside;
+}
+
+#more {
+  
+  margin-top: 24px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  h3 {
+    margin-top: 8px;
+  }
+
+  img {
+    width: 72px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  
+
+
+}
+
+#ads img {
+  border-radius: 4px;
 }
